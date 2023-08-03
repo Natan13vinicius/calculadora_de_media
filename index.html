@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de média</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Libre+Baskerville:ital@1&family=Montserrat&family=Playfair+Display:wght@800&family=Poppins&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&family=Syncopate&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <header>
+            <img src="/img/logo.png" alt="capelo e diploma">
+            <h1>Calculadora de médias</h1>
+        </header>
+        <!-- form -->
+        <form id="form-atividade">
+            <input id="nome-atividade" type="text" required placeholder="Nome da atividade">
+            <input id="nota-atividade" type="number" required placeholder="Nota da atividade" min="0" max="10">
+            <button type="submit">Adicionar +</button>
+        </form>
+
+        <!-- table -->
+        <!-- CELLSPACING serve para tirar o separador das colunas -->
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome da atividade</th>
+                    <th>Nota da atividade</th>
+                    <th>Aprovado?</th>
+                </tr>
+            </thead>
+            <!-- tbody esta sendo chamado na linha 23 main.js -->
+            <tbody>
+                <!-- <tr>
+                    <td>
+                        Atividade 1
+                    </td>
+                    <td>
+                        7
+                    </td>
+                    <td><img src="/img/aprovado.png" alt="emoji festejando"></td>
+                </tr> -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        Média final
+                    </td>
+                    <td id="Media-final-valor">
+                        ---
+                    </td>
+                    <td id="media-final-resultado"><span class="resultado reprovado">---</span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <!-- js -->
+    <script src="/main.js">
+
+    </script>
+</body>
+
+</html>
